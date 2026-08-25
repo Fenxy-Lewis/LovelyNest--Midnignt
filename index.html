@@ -317,7 +317,7 @@
       heroStatus: 'Featured Channel',
 
       // ---------- SMARTLINK ----------
-      smartlink: 'https://www.profitableratecpmnetwork.com/bw0bukjt2v?key=8ef0f2c308ef3d0cc6fc5a50db311d93',
+      smartlink: 'https://www.profitableratecpmnetwork.com/f4vkjmh3?key=4c79ed5b9ae66d7034fd1c2c4116b7a0',
 
       // ---------- COLORS ----------
       colors: {
@@ -357,33 +357,37 @@
             width: 300,
             height: 250,
             code: `
-              <script type="text/javascript">
-                atOptions = {
-                  'key' : 'b684a60311ac1ba92cf1f49097e89dce',
-                  'format' : 'iframe',
-                  'height' : 250,
-                  'width' : 300,
-                  'params' : {}
-                };
-              <\/script>
-              <script type="text/javascript" src="https://www.highrevenueformat.com/b684a60311ac1ba92cf1f49097e89dce/invoke.js"><\/script>
-            `
+<script>
+  atOptions = {
+    'key' : 'b96408c91264e5786730bbec92287411',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+  <\/script>
+  <script src="https://www.highrevenueformat.com/b96408c91264e5786730bbec92287411/invoke.js"><\/script>
+
+
+  `
           },
           desktop: {
             width: 728,
             height: 90,
             code: `
-              <script type="text/javascript">
-                atOptions = {
-                  'key' : 'febe11f758e0cbe5b2ac7ed3eebdcf5f',
-                  'format' : 'iframe',
-                  'height' : 90,
-                  'width' : 728,
-                  'params' : {}
-                };
-              <\/script>
-              <script type="text/javascript" src="https://www.highrevenueformat.com/febe11f758e0cbe5b2ac7ed3eebdcf5f/invoke.js"><\/script>
-            `
+<script>
+  atOptions = {
+    'key' : '007ebecf4e314822c6734214da4609ad',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+  <\/script>
+  <script src="https://www.highrevenueformat.com/007ebecf4e314822c6734214da4609ad/invoke.js"><\/script>
+
+
+  `
           }
         },
 
@@ -393,33 +397,36 @@
             width: 300,
             height: 250,
             code: `
-              <script type="text/javascript">
-                atOptions = {
-                  'key' : 'b684a60311ac1ba92cf1f49097e89dce',
-                  'format' : 'iframe',
-                  'height' : 250,
-                  'width' : 300,
-                  'params' : {}
-                };
-              <\/script>
-              <script type="text/javascript" src="https://www.highrevenueformat.com/b684a60311ac1ba92cf1f49097e89dce/invoke.js"><\/script>
-            `
+<script>
+  atOptions = {
+    'key' : 'b96408c91264e5786730bbec92287411',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+  <\/script>
+  <script src="https://www.highrevenueformat.com/b96408c91264e5786730bbec92287411/invoke.js"><\/script>
+
+
+  `
           },
           desktop: {
             width: 728,
             height: 90,
             code: `
-              <script type="text/javascript">
-                atOptions = {
-                  'key' : 'febe11f758e0cbe5b2ac7ed3eebdcf5f',
-                  'format' : 'iframe',
-                  'height' : 90,
-                  'width' : 728,
-                  'params' : {}
-                };
-              <\/script>
-              <script type="text/javascript" src="https://www.highrevenueformat.com/febe11f758e0cbe5b2ac7ed3eebdcf5f/invoke.js"><\/script>
-            `
+<script>
+  atOptions = {
+    'key' : '007ebecf4e314822c6734214da4609ad',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+  <\/script>
+  <script src="https://www.highrevenueformat.com/007ebecf4e314822c6734214da4609ad/invoke.js"><\/script>
+
+  `
           }
         }
       }
@@ -604,18 +611,13 @@
     function escapeHTML(value) {
       return String(value).replace(/[&<>"']/g, char => ({
         '&': '&amp;',
-        '<': '&lt;',
-        '>': '&gt;',
-        '"': '&quot;',
-        "'": '&#039;'
+        '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;'
       })[char]);
-    }
-
-    function applyTheme() {
-      const root = document.documentElement;
-      Object.entries(CONFIG.colors).forEach(([key, value]) => {
-        root.style.setProperty(`--${key}`, value);
-      });
+    } function applyTheme() {
+      const
+        root = document.documentElement; Object.entries(CONFIG.colors).forEach(([key, value]) => {
+          root.style.setProperty(`--${key}`, value);
+        });
     }
 
     function setText(id, value) {
@@ -656,9 +658,9 @@
             this.style.display = 'none';
             if (this.parentElement) {
               this.parentElement.innerHTML = `
-                <span class="w-full h-full flex items-center justify-center text-purple-600 bg-purple-50">
-                  <i data-lucide="user" class="h-10 w-10"></i>
-                </span>`;
+      <span class="w-full h-full flex items-center justify-center text-purple-600 bg-purple-50">
+        <i data-lucide="user" class="h-10 w-10"></i>
+      </span>`;
               refreshIcons();
             }
           }
@@ -673,9 +675,11 @@
       const tags = ['All', ...new Set(VIDEOS.map(v => v.tag))];
 
       filterContainer.innerHTML = tags.map(tag => `
-        <button class="filter-btn text-xs font-semibold px-3.5 py-1.5 rounded-full border border-slate-200 bg-white text-slate-600 shadow-sm hover:border-purple-300 hover:text-purple-600 ${tag === activeFilter ? 'active' : ''}" data-tag="${escapeHTML(tag)}">
-          ${escapeHTML(tag)}
-        </button>
+      <button
+        class="filter-btn text-xs font-semibold px-3.5 py-1.5 rounded-full border border-slate-200 bg-white text-slate-600 shadow-sm hover:border-purple-300 hover:text-purple-600 ${tag === activeFilter ? 'active' : ''}"
+        data-tag="${escapeHTML(tag)}">
+        ${escapeHTML(tag)}
+      </button>
       `).join('');
 
       filterContainer.querySelectorAll('.filter-btn').forEach(btn => {
@@ -695,37 +699,47 @@
       const tag = escapeHTML(video.tag);
 
       return `
-      <article class="video-card glass rounded-2xl overflow-hidden shadow-md flex flex-col justify-between border border-slate-200/80 bg-white">
+      <article
+        class="video-card glass rounded-2xl overflow-hidden shadow-md flex flex-col justify-between border border-slate-200/80 bg-white">
         <div class="relative aspect-video bg-slate-900 overflow-hidden group">
-          <img src="${image}" alt="${title}" class="video-thumb w-full h-full object-cover transition duration-500 ease-out" loading="lazy" onerror="this.src='IMG/1.jpg'" />
+          <img src="${image}" alt="${title}"
+            class="video-thumb w-full h-full object-cover transition duration-500 ease-out" loading="lazy"
+            onerror="this.src='IMG/1.jpg'" />
 
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none">
+          </div>
 
           <!-- Top Badges -->
           <div class="absolute top-3 left-3 right-3 flex items-center justify-between pointer-events-none">
-            <span class="rounded-md bg-white/95 text-slate-900 px-2 py-0.5 text-[10px] font-bold shadow-sm backdrop-blur-sm">
+            <span
+              class="rounded-md bg-white/95 text-slate-900 px-2 py-0.5 text-[10px] font-bold shadow-sm backdrop-blur-sm">
               ${tag}
             </span>
-            <span class="rounded-md bg-black/60 text-white border border-white/20 px-1.5 py-0.5 text-[9px] font-bold tracking-wider uppercase">
+            <span
+              class="rounded-md bg-black/60 text-white border border-white/20 px-1.5 py-0.5 text-[9px] font-bold tracking-wider uppercase">
               1080P HD
             </span>
           </div>
 
           <!-- Play Button Overlay -->
-          <a data-smartlink href="#" class="absolute inset-0 flex items-center justify-center" aria-label="Play ${title}">
-            <span class="h-12 w-12 sm:h-14 sm:w-14 rounded-full bg-white/95 text-purple-600 flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition duration-300">
+          <a data-smartlink href="#" class="absolute inset-0 flex items-center justify-center"
+            aria-label="Play ${title}">
+            <span
+              class="h-12 w-12 sm:h-14 sm:w-14 rounded-full bg-white/95 text-purple-600 flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition duration-300">
               <i data-lucide="play" class="h-5 w-5 sm:h-6 sm:w-6 ml-0.5 fill-current"></i>
             </span>
           </a>
 
           <!-- Duration Badge -->
-          <span class="absolute bottom-2.5 right-2.5 rounded-md bg-black/80 text-white font-medium px-2 py-0.5 text-[11px] backdrop-blur-sm">
+          <span
+            class="absolute bottom-2.5 right-2.5 rounded-md bg-black/80 text-white font-medium px-2 py-0.5 text-[11px] backdrop-blur-sm">
             ${duration}
           </span>
         </div>
 
         <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between">
-          <h3 class="font-bold text-slate-800 text-sm sm:text-[15px] leading-snug line-clamp-2 hover:text-purple-600 transition">
+          <h3
+            class="font-bold text-slate-800 text-sm sm:text-[15px] leading-snug line-clamp-2 hover:text-purple-600 transition">
             <a data-smartlink href="#">${title}</a>
           </h3>
 
@@ -735,7 +749,8 @@
               ${views} views
             </span>
 
-            <a data-smartlink href="#" class="primary-btn inline-flex items-center gap-1.5 rounded-xl text-white px-3 py-1.5 text-xs font-semibold">
+            <a data-smartlink href="#"
+              class="primary-btn inline-flex items-center gap-1.5 rounded-xl text-white px-3 py-1.5 text-xs font-semibold">
               <i data-lucide="play" class="h-3 w-3 fill-current"></i>
               Watch Now
             </a>
@@ -788,27 +803,37 @@
       iframe.setAttribute('scrolling', 'no');
       iframe.setAttribute('frameborder', '0');
 
-      const html = `<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body {
-      width: 100%;
-      height: 100%;
-      background: transparent;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-  </style>
-</head>
-<body>
-  ${code}
-</body>
-</html>`;
+      const html = `
+      <!DOCTYPE html>
+      <html>
+
+      <head>
+        <meta charset="utf-8">
+        <style>
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+
+          html,
+          body {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+          }
+        </style>
+      </head>
+
+      <body>
+        ${code}
+      </body>
+
+      </html>`;
 
       iframe.srcdoc = html;
       return iframe;
@@ -842,7 +867,8 @@
         desktopBox.style.width = slotConfig.desktop.width + 'px';
         desktopBox.style.height = slotConfig.desktop.height + 'px';
 
-        const iframeDesktop = createAdIframe(slotConfig.desktop.code, slotConfig.desktop.width, slotConfig.desktop.height);
+        const iframeDesktop = createAdIframe(slotConfig.desktop.code, slotConfig.desktop.width,
+          slotConfig.desktop.height);
         desktopBox.appendChild(iframeDesktop);
         wrapper.appendChild(desktopBox);
       }
@@ -895,7 +921,8 @@
 
     document.addEventListener('DOMContentLoaded', init);
   </script>
-  <script src="https://pl31023248.profitableratecpmnetwork.com/32/f6/99/32f69992a3edd475fa8a8e1b8321c856.js"></script>
+  <script src="https://pl31029162.profitableratecpmnetwork.com/62/0e/eb/620eeba47c9b12db7f8f956b56e35ee5.js"></script>
+
 </body>
 
 </html>
