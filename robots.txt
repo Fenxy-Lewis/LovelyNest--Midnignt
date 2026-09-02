@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lovelynest-midnignt.vercel.app/sitemap.xml
